@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- ================= WELCOME SCREEN ================= -->
+    <section id="welcome-screen">
+      <h1>Quick Quiz</h1>
+      <p>Test your knowledge. Answer before time runs out.</p>
+      <button id="start-btn">Start Quiz</button>
+    </section>
+
+    <!-- ================= QUIZ SCREEN ================= -->
+    <section id="quiz-screen" hidden>
+      <!-- Timer -->
+      <div id="timer">
+        ⏱ <span id="time-remaining">15</span>s
+      </div>
+
+      <!-- Question -->
+      <div id="question-container">
+        <h2 id="question-text">Question text goes here</h2>
+      </div>
+
+      <!-- Answer Options -->
+      <div id="answers-container"></div>
+
+      <!-- Navigation -->
+      <button id="next-btn" disabled>Next Question</button>
+    </section>
+
+    <!-- ================= RESULT SCREEN ================= -->
+    <section id="result-screen" hidden>
+      <h2>Your Result</h2>
+      <p id="final-score">Score: 0 / 0</p>
+      <p id="final-percentage">0%</p>
+      <button id="restart-btn">Restart Quiz</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

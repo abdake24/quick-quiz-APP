@@ -1,0 +1,86 @@
+/* ===== GENERAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== APP CONTAINER ===== */
+#app {
+  width: 1000px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ===== SCREENS ===== */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== HEADERS ===== */
+h1, h2 {
+  color: #333;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #ccc;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== TIMER ===== */
+#timer {
+  font-weight: bold;
+  font-size: 18px;
+  color: #555;
+}
+
+/* ===== ANSWER OPTIONS ===== */
+#answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer-btn {
+  border: 1px solid #333;
+  background: #f0f0f0;
+}
+
+/* Correct/Wrong states */
+.correct {
+  background-color: #22c55e;
+  color: #fff;
+}
+
+.wrong {
+  background-color: #ef4444;
+  color: #fff;
+}
