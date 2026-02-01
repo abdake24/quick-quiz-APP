@@ -3,7 +3,7 @@ const questions = [
   {
     question: "What is the capital of France?",
     answers: ["Paris", "London", "Berlin", "Rome"],
-    correct: 0
+    correct: 1
   },
   {
     question: "2 + 2 = ?",
